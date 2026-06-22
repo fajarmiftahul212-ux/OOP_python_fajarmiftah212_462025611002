@@ -1,4 +1,4 @@
-# Parent Class
+
 class Kendaraan:
     def __init__(self):
         print("Class Kendaraan")
@@ -7,7 +7,7 @@ class Kendaraan:
         print("Ini adalah kendaraan")
 
 
-# Child Class dari Kendaraan
+
 class Mobil(Kendaraan):
     def __init__(self):
         super().__init__()
@@ -17,7 +17,6 @@ class Mobil(Kendaraan):
         print("Mobil berjalan di jalan raya")
 
 
-# Child Class dari Kendaraan
 class Motor(Kendaraan):
     def __init__(self):
         super().__init__()
@@ -27,7 +26,6 @@ class Motor(Kendaraan):
         print("Motor berjalan di jalan kecil")
 
 
-# Multiple Inheritance
 class KendaraanDarat(Mobil, Motor):
     def __init__(self):
         super().__init__()
@@ -38,7 +36,6 @@ class KendaraanDarat(Mobil, Motor):
         print("Kendaraan darat sedang berjalan")
 
 
-# Program Utama
 print("=== Diamond Problem Example ===")
 
 kendaraan = KendaraanDarat()
